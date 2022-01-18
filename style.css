@@ -242,6 +242,25 @@ nav{
     display: flex;
 }
 
+.wave {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 /* TECH - STACK */
 
 .language__img {
